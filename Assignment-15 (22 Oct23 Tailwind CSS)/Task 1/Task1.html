@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Task 1</title>
+  </head>
+  <body class="flex justify-center items-center h-screen max-w-[1440px] m-auto border-2">
+    <section
+      class="flex justify-center items-center h-screen gap-4 px-10"
+    >
+      <!-- Login part -->
+      <div class="m-auto text-center space-y-4">
+        <h2 class="text-3xl">Login</h2>
+        <p class="text-gray-500">
+          Enter your credential to access your account
+        </p>
+        <div class="py-4">
+          <button
+            class="flex justify-center items-center gap-4 border border-gray-400 rounded p-4 m-auto w-full"
+          >
+          <img src="./Images/Google_img.png" alt="google icons" class="w-5"/>
+            Login with google
+          </button>
+        </div>
+
+        <!-- Or -->
+        <div class="flex w-full justify-center items-center gap-4 py-4">
+          <div class="w-full lg:w-44 h-[0.5px] bg-gray-500"></div>
+          <p>Or</p>
+          <div class="w-full lg:w-44 h-[0.5px] bg-gray-500"></div>
+        </div>
+
+        <!-- Inputs -->
+        <form class="flex flex-col text-start">
+          <label for="Email">Email Address</label>
+          <input
+            type="email"
+            name="Email"
+            id="Email"
+            placeholder="email@gmail.com"
+            required
+            class="p-2 w-full border border-[0.5px] border-[#828282] rounded"
+          />
+          <br />
+          <label for="Password" class="flex justify-between w-full">
+            Password
+            <span>
+              <a href="#" class="text-blue-600"> Forgot Password?</a>
+            </span>
+          </label>
+          <input
+            type="password"
+            name="Password"
+            id="Password"
+            placeholder="Password"
+            required
+            class="p-2 w-full border border-[0.5px] border-[#828282] rounded"
+          />
+          <br />
+          <button
+            type="submit"
+            class="text-white w-full bg-blue-500 hover:bg-blue-600 py-2 rounded"
+          >
+            Login
+          </button>
+          <p class="text-[#828282] mx-auto py-4">
+            Don't have an account?
+            <a href="#" class="text-[#000]"> Register here </a>
+          </p>
+        </form>
+      </div>
+
+      <!-- image part -->
+      <div class="hidden lg:block self-end w-[90%] xl:w-auto">
+        <img
+          class="h-[90vh]"
+          src="./Images/image.jpg"
+          alt="Login section image"
+        />
+      </div>
+    </section>
+  </body>
+</html>
